@@ -88,7 +88,7 @@ function App() {
         zIndex: 1,
         position: 'relative',
       }}>
-        <img src="/LOGO.png" alt="Church Logo" style={{ width: 180, height: 180, marginBottom: '0.5rem', filter: 'drop-shadow(0 0 24px #7c3aed)' }} />
+        <img src={process.env.NODE_ENV === 'production' ? '/qrcode/LOGO.png' : '/LOGO.png'} alt="Church Logo" style={{ width: 180, height: 180, marginBottom: '0.5rem', filter: 'drop-shadow(0 0 24px #7c3aed)' }} />
         <h1 style={{ fontSize: '2.1rem', fontWeight: 700, color: '#fff', marginBottom: '0.2rem', letterSpacing: '-1px', textShadow: '0 2px 16px #232946' }}>Our Church Socials</h1>
         <p style={{ color: '#e5e7eb', marginBottom: '1.5rem', textAlign: 'center', fontSize: '1.1rem' }}>
           Connect with us on our social media platforms!
